@@ -1,4 +1,4 @@
-package com.example.auth.api.generated;
+package com.example.auth.api.generated.authenticate;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -27,30 +27,30 @@ public final class AuthenticationServiceGrpc {
   public static final String SERVICE_NAME = "com.example.auth.AuthenticationService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.example.auth.api.generated.AuthenticationRequest,
-      com.example.auth.api.generated.AuthenticationResponse> getAuthenticateMethod;
+  private static volatile io.grpc.MethodDescriptor<com.example.auth.api.generated.authenticate.AuthenticationRequest,
+      com.example.auth.api.generated.authenticate.AuthenticationResponse> getAuthenticateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Authenticate",
-      requestType = com.example.auth.api.generated.AuthenticationRequest.class,
-      responseType = com.example.auth.api.generated.AuthenticationResponse.class,
+      requestType = com.example.auth.api.generated.authenticate.AuthenticationRequest.class,
+      responseType = com.example.auth.api.generated.authenticate.AuthenticationResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.example.auth.api.generated.AuthenticationRequest,
-      com.example.auth.api.generated.AuthenticationResponse> getAuthenticateMethod() {
-    io.grpc.MethodDescriptor<com.example.auth.api.generated.AuthenticationRequest, com.example.auth.api.generated.AuthenticationResponse> getAuthenticateMethod;
+  public static io.grpc.MethodDescriptor<com.example.auth.api.generated.authenticate.AuthenticationRequest,
+      com.example.auth.api.generated.authenticate.AuthenticationResponse> getAuthenticateMethod() {
+    io.grpc.MethodDescriptor<com.example.auth.api.generated.authenticate.AuthenticationRequest, com.example.auth.api.generated.authenticate.AuthenticationResponse> getAuthenticateMethod;
     if ((getAuthenticateMethod = AuthenticationServiceGrpc.getAuthenticateMethod) == null) {
       synchronized (AuthenticationServiceGrpc.class) {
         if ((getAuthenticateMethod = AuthenticationServiceGrpc.getAuthenticateMethod) == null) {
           AuthenticationServiceGrpc.getAuthenticateMethod = getAuthenticateMethod = 
-              io.grpc.MethodDescriptor.<com.example.auth.api.generated.AuthenticationRequest, com.example.auth.api.generated.AuthenticationResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.example.auth.api.generated.authenticate.AuthenticationRequest, com.example.auth.api.generated.authenticate.AuthenticationResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "com.example.auth.AuthenticationService", "Authenticate"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.example.auth.api.generated.AuthenticationRequest.getDefaultInstance()))
+                  com.example.auth.api.generated.authenticate.AuthenticationRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.example.auth.api.generated.AuthenticationResponse.getDefaultInstance()))
+                  com.example.auth.api.generated.authenticate.AuthenticationResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new AuthenticationServiceMethodDescriptorSupplier("Authenticate"))
                   .build();
           }
@@ -59,30 +59,30 @@ public final class AuthenticationServiceGrpc {
      return getAuthenticateMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.example.auth.api.generated.AuthenticationRequest,
-      com.example.auth.api.generated.AuthenticationResponse> getResetTokenMethod;
+  private static volatile io.grpc.MethodDescriptor<com.example.auth.api.generated.authenticate.AuthenticationRequest,
+      com.example.auth.api.generated.authenticate.AuthenticationResponse> getResetTokenMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ResetToken",
-      requestType = com.example.auth.api.generated.AuthenticationRequest.class,
-      responseType = com.example.auth.api.generated.AuthenticationResponse.class,
+      requestType = com.example.auth.api.generated.authenticate.AuthenticationRequest.class,
+      responseType = com.example.auth.api.generated.authenticate.AuthenticationResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.example.auth.api.generated.AuthenticationRequest,
-      com.example.auth.api.generated.AuthenticationResponse> getResetTokenMethod() {
-    io.grpc.MethodDescriptor<com.example.auth.api.generated.AuthenticationRequest, com.example.auth.api.generated.AuthenticationResponse> getResetTokenMethod;
+  public static io.grpc.MethodDescriptor<com.example.auth.api.generated.authenticate.AuthenticationRequest,
+      com.example.auth.api.generated.authenticate.AuthenticationResponse> getResetTokenMethod() {
+    io.grpc.MethodDescriptor<com.example.auth.api.generated.authenticate.AuthenticationRequest, com.example.auth.api.generated.authenticate.AuthenticationResponse> getResetTokenMethod;
     if ((getResetTokenMethod = AuthenticationServiceGrpc.getResetTokenMethod) == null) {
       synchronized (AuthenticationServiceGrpc.class) {
         if ((getResetTokenMethod = AuthenticationServiceGrpc.getResetTokenMethod) == null) {
           AuthenticationServiceGrpc.getResetTokenMethod = getResetTokenMethod = 
-              io.grpc.MethodDescriptor.<com.example.auth.api.generated.AuthenticationRequest, com.example.auth.api.generated.AuthenticationResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.example.auth.api.generated.authenticate.AuthenticationRequest, com.example.auth.api.generated.authenticate.AuthenticationResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "com.example.auth.AuthenticationService", "ResetToken"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.example.auth.api.generated.AuthenticationRequest.getDefaultInstance()))
+                  com.example.auth.api.generated.authenticate.AuthenticationRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.example.auth.api.generated.AuthenticationResponse.getDefaultInstance()))
+                  com.example.auth.api.generated.authenticate.AuthenticationResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new AuthenticationServiceMethodDescriptorSupplier("ResetToken"))
                   .build();
           }
@@ -120,15 +120,15 @@ public final class AuthenticationServiceGrpc {
 
     /**
      */
-    public void authenticate(com.example.auth.api.generated.AuthenticationRequest request,
-        io.grpc.stub.StreamObserver<com.example.auth.api.generated.AuthenticationResponse> responseObserver) {
+    public void authenticate(com.example.auth.api.generated.authenticate.AuthenticationRequest request,
+        io.grpc.stub.StreamObserver<com.example.auth.api.generated.authenticate.AuthenticationResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getAuthenticateMethod(), responseObserver);
     }
 
     /**
      */
-    public void resetToken(com.example.auth.api.generated.AuthenticationRequest request,
-        io.grpc.stub.StreamObserver<com.example.auth.api.generated.AuthenticationResponse> responseObserver) {
+    public void resetToken(com.example.auth.api.generated.authenticate.AuthenticationRequest request,
+        io.grpc.stub.StreamObserver<com.example.auth.api.generated.authenticate.AuthenticationResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getResetTokenMethod(), responseObserver);
     }
 
@@ -138,15 +138,15 @@ public final class AuthenticationServiceGrpc {
             getAuthenticateMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.example.auth.api.generated.AuthenticationRequest,
-                com.example.auth.api.generated.AuthenticationResponse>(
+                com.example.auth.api.generated.authenticate.AuthenticationRequest,
+                com.example.auth.api.generated.authenticate.AuthenticationResponse>(
                   this, METHODID_AUTHENTICATE)))
           .addMethod(
             getResetTokenMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.example.auth.api.generated.AuthenticationRequest,
-                com.example.auth.api.generated.AuthenticationResponse>(
+                com.example.auth.api.generated.authenticate.AuthenticationRequest,
+                com.example.auth.api.generated.authenticate.AuthenticationResponse>(
                   this, METHODID_RESET_TOKEN)))
           .build();
     }
@@ -172,16 +172,16 @@ public final class AuthenticationServiceGrpc {
 
     /**
      */
-    public void authenticate(com.example.auth.api.generated.AuthenticationRequest request,
-        io.grpc.stub.StreamObserver<com.example.auth.api.generated.AuthenticationResponse> responseObserver) {
+    public void authenticate(com.example.auth.api.generated.authenticate.AuthenticationRequest request,
+        io.grpc.stub.StreamObserver<com.example.auth.api.generated.authenticate.AuthenticationResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getAuthenticateMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void resetToken(com.example.auth.api.generated.AuthenticationRequest request,
-        io.grpc.stub.StreamObserver<com.example.auth.api.generated.AuthenticationResponse> responseObserver) {
+    public void resetToken(com.example.auth.api.generated.authenticate.AuthenticationRequest request,
+        io.grpc.stub.StreamObserver<com.example.auth.api.generated.authenticate.AuthenticationResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getResetTokenMethod(), getCallOptions()), request, responseObserver);
     }
@@ -207,14 +207,14 @@ public final class AuthenticationServiceGrpc {
 
     /**
      */
-    public com.example.auth.api.generated.AuthenticationResponse authenticate(com.example.auth.api.generated.AuthenticationRequest request) {
+    public com.example.auth.api.generated.authenticate.AuthenticationResponse authenticate(com.example.auth.api.generated.authenticate.AuthenticationRequest request) {
       return blockingUnaryCall(
           getChannel(), getAuthenticateMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.example.auth.api.generated.AuthenticationResponse resetToken(com.example.auth.api.generated.AuthenticationRequest request) {
+    public com.example.auth.api.generated.authenticate.AuthenticationResponse resetToken(com.example.auth.api.generated.authenticate.AuthenticationRequest request) {
       return blockingUnaryCall(
           getChannel(), getResetTokenMethod(), getCallOptions(), request);
     }
@@ -240,16 +240,16 @@ public final class AuthenticationServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.example.auth.api.generated.AuthenticationResponse> authenticate(
-        com.example.auth.api.generated.AuthenticationRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.example.auth.api.generated.authenticate.AuthenticationResponse> authenticate(
+        com.example.auth.api.generated.authenticate.AuthenticationRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getAuthenticateMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.example.auth.api.generated.AuthenticationResponse> resetToken(
-        com.example.auth.api.generated.AuthenticationRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.example.auth.api.generated.authenticate.AuthenticationResponse> resetToken(
+        com.example.auth.api.generated.authenticate.AuthenticationRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getResetTokenMethod(), getCallOptions()), request);
     }
@@ -276,12 +276,12 @@ public final class AuthenticationServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_AUTHENTICATE:
-          serviceImpl.authenticate((com.example.auth.api.generated.AuthenticationRequest) request,
-              (io.grpc.stub.StreamObserver<com.example.auth.api.generated.AuthenticationResponse>) responseObserver);
+          serviceImpl.authenticate((com.example.auth.api.generated.authenticate.AuthenticationRequest) request,
+              (io.grpc.stub.StreamObserver<com.example.auth.api.generated.authenticate.AuthenticationResponse>) responseObserver);
           break;
         case METHODID_RESET_TOKEN:
-          serviceImpl.resetToken((com.example.auth.api.generated.AuthenticationRequest) request,
-              (io.grpc.stub.StreamObserver<com.example.auth.api.generated.AuthenticationResponse>) responseObserver);
+          serviceImpl.resetToken((com.example.auth.api.generated.authenticate.AuthenticationRequest) request,
+              (io.grpc.stub.StreamObserver<com.example.auth.api.generated.authenticate.AuthenticationResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -305,7 +305,7 @@ public final class AuthenticationServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.example.auth.api.generated.AuthClass.getDescriptor();
+      return com.example.auth.api.generated.authenticate.AuthClass.getDescriptor();
     }
 
     @java.lang.Override
